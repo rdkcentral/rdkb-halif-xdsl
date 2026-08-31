@@ -41,13 +41,11 @@ caller.** The interface definition is
 ```mermaid
 flowchart TD
     Mgr["RdkXdslManager"]
-    Cli["json_hal_client (json-hal-library)"]
-    Sock["TCP socket on port 4098"]
+    Cli["JSON HAL Client (TCP socket on port 4098) "]
     Srv["Vendor JSON HAL Server"]
     Drv["Vendor DSL driver and firmware"]
     Mgr <--> Cli
-    Cli <--> Sock
-    Sock <--> Srv
+    Cli <--> Srv
     Srv <--> Drv
 ```
 
