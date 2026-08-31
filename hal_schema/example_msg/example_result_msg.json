@@ -1,6 +1,6 @@
 {
   "module": "xdslhal",
-  "version": "0.0.1",  
+  "version": "1.0.0",
   "action": "result",
   "reqId" : "100002",
   "Result": {

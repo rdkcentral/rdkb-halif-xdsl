@@ -121,7 +121,7 @@ that order and a caller must not vary it.
 - `json_hal_client_init("/etc/rdk/conf/xdsl_manager_conf.json")` — `xdsl_hal.c`, reading the
   configuration path fixed by `XDSL_JSON_CONF_PATH`. This loads the schema path
   `/etc/rdk/schemas/xdsl_hal_schema.json` and the server port `4098` from that file's
-  `hal_schema_path` and `server_port` keys [`config/xdsl_manager_conf.json`]; it does not open the
+  `hal_schema_path` and `server_port` keys [`hal_shema/xdsl_manager_conf.json`]; it does not open the
   socket.
 - `json_hal_client_run()` — `xdsl_hal.c:196`. Starts the client socket thread, which is what
   actually connects.
@@ -304,7 +304,7 @@ gets one of approximately ten seconds rather than none.
 `json_hal_client_send_and_get_reply_with_timeout()` (`json_hal_client.h`) takes a deadline in
 seconds, converts it to ticks as `(timeout * 1000000) / LOOP_TIMEOUT` with `LOOP_TIMEOUT` at
 `250000` microseconds (`tcp_client.h`) — four ticks per second — and then **clamps the result at
-both ends**, up to `40 (10s)` (`json_hal_client.c`) and down to `480 (120s)`, the upper bound. The deadline is approximate, and it is an upper bound rather than a guaranteed minimum wait.
+both ends**, down to `40 (10s)` (`json_hal_client.c`) and up to `480 (120s)`, the upper bound. The deadline is approximate, and it is an upper bound rather than a guaranteed minimum wait.
 
 ### Internal Error Handling
 
@@ -580,7 +580,7 @@ a caller must construct or interpret. The envelope is the part every message sha
 | Field | Schema definition | Constraint |
 | --- | --- | --- |
 | `module` | `moduleName` | `const` `xdslhal` |
-| `version` | `schemaVersion` | `const` `0.0.1` |
+| `version` | `schemaVersion` | `const` `1.0.0` |
 | `action` | `action` | one of eleven enumerated values |
 | `reqId` | inline | `type` `string`, `pattern` `^[0-9]+$` |
 
