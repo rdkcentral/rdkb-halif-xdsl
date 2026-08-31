@@ -1,0 +1,17 @@
+{
+  "module": "xdslhal",
+  "version": "0.0.1",  
+  "action": "publishEvent",
+  "reqId" : "100006",
+  "params":
+  [
+    { 
+      "name":"Device.DSL.Line.1.LinkStatus",
+      "value": "Up"
+    },
+    { 
+      "name":"Device.FAST.Line.1.LinkStatus",
+      "value": "Initializing"
+    }    
+  ]
+}

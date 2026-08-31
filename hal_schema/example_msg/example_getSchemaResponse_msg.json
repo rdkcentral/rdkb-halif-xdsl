@@ -1,0 +1,9 @@
+{
+  "module": "xdslhal",
+  "version": "0.0.1",
+  "action": "getSchemaResponse",
+  "reqId" : "100002",
+  "SchemaInfo": {
+    "FilePath": "/etc/sky/hal_schemas/xdsl_hal_schema.json"
+  }
+}

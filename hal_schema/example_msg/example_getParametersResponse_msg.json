@@ -1,0 +1,11 @@
+{
+  "module": "xdslhal",
+  "version": "0.0.1",
+  "action": "getParametersResponse",
+  "reqId" : "100001",
+  "params":
+  [
+    {"name":"Device.DSL.Line.1.Enable","value":true},
+    {"name":"Device.DSL.Line.1.Upstream","value":false}
+  ]
+}

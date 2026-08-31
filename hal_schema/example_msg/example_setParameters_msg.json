@@ -1,0 +1,24 @@
+{
+  "module": "xdslhal",
+  "version": "0.0.1",  
+  "action": "setParameters",
+  "reqId" : "100001",
+  "params":
+  [
+     {
+       "name":"Device.DSL.Line.1.Enable",
+       "type":"boolean",
+       "value":true
+     },
+     {
+       "name":"Device.DSL.Line.1.StandardsSupported",
+       "type": "string",
+       "value":"G.992.1_Annex_A,G.992.1_Annex_B,G.992.1_Annex_C"
+     },
+     {
+       "name":"Device.DSL.Line.1.AllowedProfiles",
+       "type": "string",
+       "value":"8a,8b,8c,8d,12b,17b,30a,35b"
+     }
+  ]
+}

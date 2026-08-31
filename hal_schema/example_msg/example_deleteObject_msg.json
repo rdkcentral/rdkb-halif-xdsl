@@ -1,0 +1,12 @@
+{
+  "module": "xdslhal",
+  "version": "0.0.1",  
+  "action": "deleteObject",
+  "reqId" : "100003",
+  "params":
+  [
+    {
+      "name":"Device.DSL.Line.1."
+    }
+  ]
+}

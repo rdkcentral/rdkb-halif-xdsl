@@ -1,0 +1,14 @@
+{
+  "module": "xdslhal",
+  "version": "0.0.1",  
+  "action": "configureObject",
+  "reqId" : "100001",
+  "params":
+  [
+     {
+       "name":"Device.DSL.Line.1.AllowedProfiles",
+       "type": "string",
+       "value":["8b","12a","17a","35b"]
+     }
+  ]
+}

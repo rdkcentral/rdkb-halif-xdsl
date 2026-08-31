@@ -1,0 +1,4 @@
+{
+    "hal_schema_path": "/etc/rdk/schemas/xdsl_hal_schema.json",
+    "server_port": 4098
+}

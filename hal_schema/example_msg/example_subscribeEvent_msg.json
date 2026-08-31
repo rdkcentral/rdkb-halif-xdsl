@@ -1,0 +1,18 @@
+{
+  "module": "xdslhal",
+  "version": "0.0.1",  
+  "action": "subscribeEvent",
+  "reqId" : "100006",
+  "params":
+  [
+    { 
+      "name":"Device.DSL.Line.1.LinkStatus",
+      "notificationType": "onChange"
+    },
+    { 
+      "name":"Device.FAST.Line.1.LinkStatus",
+      "notificationType": "onChange"
+    } 
+    
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "module": "xdslhal",
+  "version": "0.0.1",  
+  "action": "getParameters",
+  "reqId" : "100001",
+  "params":
+  [
+     {"name":"Device.DSL.Line.1."}
+  ]
+}
