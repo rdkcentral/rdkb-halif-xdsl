@@ -1,0 +1,6 @@
+{
+  "module": "xslhal",
+  "version": "1.0.0",  
+  "action": "getSchema",
+  "reqId" : "100002"
+}
